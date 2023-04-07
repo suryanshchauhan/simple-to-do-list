@@ -12,3 +12,4 @@ Check out the live demo: https://todolist-suryansh.netlify.app
 </ul>
 
 <h3>Screenshots</h3>
+![image](https://user-images.githubusercontent.com/66567078/230647881-dfc5e278-4bd2-4b09-ab3e-f22e2eda2e7d.png)
