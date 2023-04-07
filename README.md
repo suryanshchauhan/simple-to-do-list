@@ -1,4 +1,4 @@
-<h1>Simple To-Do List<h1>
+<h1>Simple To-Do List</h1>
 
 This is a simple to-do list web application built using HTML, CSS, and JavaScript. You can add tasks, mark them as done by clicking on the task, or delete them.
 
