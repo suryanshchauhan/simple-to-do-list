@@ -1,0 +1,151 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+}
+.main-container {
+  width: 40%;
+  min-width: 450px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 30px 40px;
+}
+#addTask {
+  position: relative;
+  background-color: #f1faee;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#addTask input {
+  width: 70%;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  border: 2px solid #a8dadc;
+  padding: 12px;
+  color: #333333;
+  font-weight: 300;
+  position: relative;
+  border-radius: 5px;
+}
+#addTask input:focus {
+  outline: none;
+  border-color: #2a9d8f;
+}
+
+#addTask button {
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #2a9d8f;
+  border: none;
+  color: #f1faee;
+  cursor: pointer;
+  outline: none;
+}
+#taskList {
+  background-color: #f1faee;
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: relative;
+}
+.singleTask {
+  background-color: #f1faee;
+  height: 50px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #a8dadc;
+  cursor: pointer;
+}
+.singleTask span {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+.singleTask button {
+  background-color: #2a9d8f;
+  color: #f1faee;
+  height: 100%;
+  width: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.completed {
+  text-decoration: line-through;
+}
+
+.widget-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.main-widget {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sub-widgets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sub-widgets a {
+  margin-bottom: 10px;
+}
+
+.widget-container.clicked .sub-widgets {
+  opacity: 1;
+  pointer-events: all;
+  margin-top: -150px;
+}
+
+.sub-widgets i {
+  font-size: 30px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.sub-widgets i:hover {
+  color: #fff;
+}
